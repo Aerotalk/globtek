@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Management Solutions, Network Management Software, Managed Internet Solutions, Wifi Hotspot Software</title>
+    <meta name="description" content="Comprehensive Internet Management Solutions, Wifi Hotspot Software & Network Management Software for optimizing your network. Improve performance, enhance security, and reduce costs.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Internet Management Solutions, Network Management Software, Managed Internet Solutions​, Wifi Hotspot Software" />
+    <meta property="og:description" content="Comprehensive Internet Management Solutions, Wifi Hotspot Software & Network Management Software for optimizing your network. Improve performance, enhance security, and reduce costs." />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Globetek Infoway" />
+    <meta property="og:updated_time" content="2025-06-06T12:00:11+00:00" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Internet Management Solutions, Network Management Software, Managed Internet Solutions​, Wifi Hotspot Software" />
+    <meta name="twitter:description" content="Comprehensive Internet Management Solutions, Wifi Hotspot Software & Network Management Software for optimizing your network. Improve performance, enhance security, and reduce costs." />
+
+    <!-- Favicon - Updated to match logo color -->
+    <link rel="icon" href="https://placehold.co/270x270/0058E6/ffffff?text=GI" type="image/png">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#E60000', // Primary red for accents
+                        'light-red': '#ffe6e6',   // Light red for hover/background
+                        'primary-blue': '#0058E6', // Primary blue for main elements (like logo)
+                        'light-blue': '#e6f0ff',   // Light blue for hover/background
+                        'dark-text': '#181D23',
+                        'medium-text': '#575A5F',
+                        'light-text': '#96989B',
+                        'border-gray': '#D5D5D7',
+                        'background-white': '#ffffff',
+                        'hero-dark-background': '#1A202C', // Dark blue for hero background
+                        'hero-light-blue': '#0058E6', // A brighter blue for accents in the hero
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        /* Custom CSS for Elegant and Themify Icons - if specific icons are needed beyond Font Awesome */
+        @font-face {
+            font-family: 'ElegantIcons';
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/elegant-font/1.0.0/fonts/ElegantIcons.eot');
+            src: url('https://cdnjs.cloudflare.com/ajax/libs/elegant-font/1.0.0/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+                 url('https://cdnjs.cloudflare.com/ajax/libs/elegant-font/1.0.0/fonts/ElegantIcons.woff') format('woff'),
+                 url('https://cdnjs.cloudflare.com/ajax/libs/elegant-font/1.0.0/fonts/ElegantIcons.ttf') format('truetype'),
+                 url('https://cdnjs.cloudflare.com/ajax/libs/elegant-font/1.0.0/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .icon_book_alt:before {
+            font-family: 'ElegantIcons';
+            content: "\e022"; /* This is the actual unicode for the book icon */
+        }
+        .icon-document:before {
+            font-family: 'ElegantIcons';
+            content: "\e028"; /* This is the actual unicode for the document icon */
+        }
+        .icon-commerce-and-shopping:before {
+            font-family: 'ElegantIcons';
+            content: "\e05d"; /* Placeholder, adjust with actual ElegantIcon unicode if needed */
+        }
+        .icon-Leaf:before {
+            font-family: 'ElegantIcons';
+            content: "\e077"; /* Placeholder, adjust with actual ElegantIcon unicode if needed */
+        }
+
+        /* Basic overrides for icons to ensure consistent sizing */
+        .icon {
+            display: inline-block;
+            font-size: 1.5em; /* Adjust as needed */
+            line-height: 1;
+        }
+
+        /* Ensure smooth scrolling for navigation links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* General layout adjustments */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #575A5F;
+            background-color: #ffffff;
+        }
+
+        /* Hero section background - Updated to a dark blue, similar to the image */
+        .hero-background {
+            /* Using a linear gradient with a slight radial feel to mimic the network background */
+            background: radial-gradient(at 70% 30%, rgba(0, 88, 230, 0.2) 0%, rgba(26, 32, 44, 0.8) 70%),
+                        linear-gradient(to right, #1A202C, #1A202C);
+            background-size: cover;
+            background-position: center;
+            position: relative; /* For positioning child elements like the scroll arrow */
+            overflow: hidden; /* Hide overflow of network lines if they extend */
+        }
+        /* Style for the dropdown arrow for Solutions */
+        .nav-item-dropdown::after {
+            content: '\f0d7'; /* Unicode for Font Awesome caret-down icon */
+            font-family: 'Font Awesome 5 Free'; /* Specify Font Awesome font */
+            font-weight: 900; /* For solid icons */
+            margin-left: 0.5rem;
+            vertical-align: middle;
+            font-size: 0.8em;
+        }
+
+        /* Scroll down arrow animation */
+        .scroll-down-arrow {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: white;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Animations for elements appearing on scroll */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="font-inter antialiased text-medium-text bg-background-white">
+
+    <!-- Top Bar Header Section -->
+    <div class="bg-primary-red text-white text-sm py-2 px-4 md:px-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-1 md:space-y-0">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>Indo Japan House, 4th Floor, Saltlake, Kolkata 700091</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center"><i class="fas fa-envelope mr-2"></i>sales@24onlinetech.com / sales@globetek.co.in</span>
+                <span class="flex items-center"><i class="fas fa-phone-alt mr-2"></i>+91 85850 04344</span>
+                <span class="flex items-center"><i class="fas fa-phone-alt mr-2"></i>+65 9376 1563</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header Section -->
+    <header class="bg-background-white text-dark-text py-4 shadow-md sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://placehold.co/50x50/0058E6/ffffff?text=GI" alt="Globetek Infoway Logo" class="w-12 h-12 rounded-full">
+                <span class="text-2xl font-bold text-dark-text">GLOBETEK <span class="block text-sm font-normal -mt-1">INFOWAY</span></span>
+            </a>
+
+            <!-- Navigation - Desktop -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="hover:text-primary-red transition duration-300">About Us</a>
+                <!-- Solutions with dropdown indicator -->
+                <a href="#solutions" class="hover:text-primary-red transition duration-300 nav-item-dropdown">Solutions</a>
+                <a href="#" class="hover:text-primary-red transition duration-300">Partner portal</a>
+                <a href="#clients" class="hover:text-primary-red transition duration-300">Our Clientele</a>
+                <a href="#" class="hover:text-primary-red transition duration-300">Case Study</a>
+                <a href="#" class="hover:text-primary-red transition duration-300">Events</a>
+                <!-- TALK TO SALES Button -->
+                <a href="#contact" class="bg-primary-red text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-light-red hover:text-primary-red transition duration-300 transform hover:scale-105">
+                    TALK TO SALES
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-dark-text focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-primary-red bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-8">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-white text-3xl focus:outline-none">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="#home" class="text-white text-2xl hover:text-light-red transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+            <a href="#about" class="text-white text-2xl hover:text-light-red transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About Us</a>
+            <a href="#solutions" class="text-white text-2xl hover:text-light-red transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Solutions</a>
+            <a href="#" class="text-white text-2xl hover:text-light-red transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Partner portal</a>
+            <a href="#clients" class="text-white text-2xl hover:text-light-red transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Our Clientele</a>
+            <a href="#" class="text-white text-2xl hover:text-light-red transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Case Study</a>
+            <a href="#" class="text-white text-2xl hover:text-light-red transition duration-300" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Events</a>
+            <a href="#contact" class="bg-white text-primary-red font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-light-red hover:text-primary-red transition duration-300 transform hover:scale-105" onclick="document.getElementById('mobile-menu').classList.add('hidden')">TALK TO SALES</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-background text-white py-20 px-4 md:px-8 flex items-center justify-center min-h-[calc(100vh-80px)] rounded-b-xl shadow-lg relative">
+            <div class="text-center md:text-left max-w-4xl space-y-6 z-10">
+                <p class="text-lg md:text-xl font-semibold uppercase text-primary-blue mb-2 fade-in-up">
+                    24ONLINE SINGLE PLATFORM, MULTIPLE SOLUTIONS
+                </p>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg fade-in-up">
+                    Your All-in-One Solution for Internet Management
+                </h1>
+                <p class="text-lg md:text-xl opacity-90 fade-in-up" style="transition-delay: 0.2s;">
+                    Empowering Telcos, ISPs, satellite providers, hotels, hospitals, universities, cafes, enterprises, banks, airports, malls, and smart cities with a comprehensive AAA, Access Gateway, Captive Portal, OSS/BSS-CRM, Subscriber Management, and more to support diverse networks.
+                </p>
+                <div class="space-x-4 pt-4 fade-in-up" style="transition-delay: 0.4s;">
+                     <a href="#solutions" class="bg-primary-red text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-light-red hover:text-primary-red transition duration-300 transform hover:scale-105">
+                        DISCOVER OUR SOLUTION
+                    </a>
+                </div>
+            </div>
+
+            <!-- Logos at the bottom-left -->
+            <div class="absolute bottom-10 left-10 flex flex-col items-start space-y-4 md:flex-row md:space-y-0 md:space-x-8 z-10">
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/30x30/0058E6/ffffff?text=GI" alt="Globetek Logo" class="w-8 h-8 rounded-full">
+                    <span class="text-white text-lg font-semibold">GLOBETEK</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/30x30/0058E6/ffffff?text=GI" alt="Globetek Infoway Ventures Logo" class="w-8 h-8 rounded-full">
+                    <span class="text-white text-sm">Globetek Infoway Ventures Pvt. Ltd.</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/30x30/0058E6/ffffff?text=GI" alt="Globetek Infoway Singapore Logo" class="w-8 h-8 rounded-full">
+                    <span class="text-white text-sm">Globetek Infoway (Singapore) Pte Ltd.</span>
+                </div>
+                 <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/30x30/FFFFFF/0058E6?text=24" alt="24Online Logo" class="w-8 h-8 rounded-full">
+                    <span class="text-white text-lg font-semibold">24ONLINE</span>
+                </div>
+            </div>
+
+            <!-- Scroll Down Arrow -->
+            <a href="#solutions" class="scroll-down-arrow z-10">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="py-16 px-4 md:px-8 bg-gray-50">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h6 class="text-primary-blue font-semibold text-sm uppercase mb-2 fade-in-up">Our Solutions</h6>
+                    <h2 class="text-4xl font-bold text-dark-text mb-4 fade-in-up">Smart Connectivity, Smarter Solutions</h2>
+                    <p class="text-lg text-medium-text max-w-2xl mx-auto fade-in-up">
+                        Tailored Internet Management for Every Industry—Enhancing Security, Speed, and Seamless Access Across Sectors.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Solution Card 1 -->
+                    <a href="https://globetek.co.in/internet-service-providers/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="fas fa-broadcast-tower"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Telcos, ISPs, BSPs & MSPs</h3>
+                        </div>
+                        <p class="text-medium-text">Advanced bandwidth management and secure internet solutions.</p>
+                    </a>
+
+                    <!-- Solution Card 2 -->
+                    <a href="https://globetek.co.in/hotels-resorts/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Hotel & Resorts</h3>
+                        </div>
+                        <p class="text-medium-text">Seamless guest Wi-Fi access with personalized login portals.</p>
+                    </a>
+
+                    <!-- Solution Card 3 -->
+                    <a href="https://globetek.co.in/airports-transport-station/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="fas fa-plane-departure"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Airports, Cruise & Railway Stations</h3>
+                        </div>
+                        <p class="text-medium-text">High-speed, secure public internet with flexible billing options.</p>
+                    </a>
+
+                    <!-- Solution Card 4 -->
+                    <a href="https://globetek.co.in/bank-ites/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.3s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="icon icon-document"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Bank & NBFC, IT & ITES</h3>
+                        </div>
+                        <p class="text-medium-text">Reliable and compliant internet security for financial sectors.</p>
+                    </a>
+
+                    <!-- Solution Card 5 -->
+                    <a href="https://globetek.co.in/hospitals/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.4s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Single & Multi-chain Hospitals</h3>
+                        </div>
+                        <p class="text-medium-text">Efficient patient internet access with data security compliance.</p>
+                    </a>
+
+                    <!-- Solution Card 6 -->
+                    <a href="https://globetek.co.in/educational-institutions/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.5s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="icon icon_book_alt"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Educational Institutions</h3>
+                        </div>
+                        <p class="text-medium-text">Campus-wide internet control with student authentication tools.</p>
+                    </a>
+
+                    <!-- Solution Card 7 -->
+                    <a href="internet-management-for-smart-cities/index.html" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.6s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="icon icon-Leaf"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">HotSpots for Smart Cities</h3>
+                        </div>
+                        <p class="text-medium-text">City-wide public Wi-Fi with real-time monitoring and analytics.</p>
+                    </a>
+
+                    <!-- Solution Card 8 -->
+                    <a href="https://globetek.co.in/stadium-and-shopping-mall/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.7s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="icon icon-commerce-and-shopping"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Shopping Mall & Stadiums</h3>
+                        </div>
+                        <p class="text-medium-text">Engaging customer experiences with monetized Wi-Fi services.</p>
+                    </a>
+
+                    <!-- Solution Card 9 -->
+                    <a href="https://globetek.co.in/restaurant-cafes/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.8s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="fas fa-hamburger"></i> <!-- Using Font Awesome for simplicity, check if original used a specific icon -->
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Restaurants & Clubs</h3>
+                        </div>
+                        <p class="text-medium-text">Branded guest Wi-Fi access with social media login integration.</p>
+                    </a>
+
+                    <!-- Solution Card 10 -->
+                    <a href="https://globetek.co.in/stock-exchanges-space-research-center-defence-sectors-and-courts/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 0.9s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Stock Exchanges, Space Research Center, Defence Sectors and Courts</h3>
+                        </div>
+                        <p class="text-medium-text">Managed internet solutions for best efficiency.</p>
+                    </a>
+
+                    <!-- Solution Card 11 -->
+                    <a href="https://globetek.co.in/religious-institutions-events/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 1.0s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="fas fa-hands-praying"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Religious Institutions & Events</h3>
+                        </div>
+                        <p class="text-medium-text">Easily manage internet across different branches.</p>
+                    </a>
+
+                    <!-- Solution Card 12 -->
+                    <a href="https://globetek.co.in/housing-complex-service-apartments/" target="_blank" rel="noopener" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 fade-in-up" style="transition-delay: 1.1s;">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-light-blue text-primary-blue p-4 rounded-full text-2xl flex items-center justify-center border-2 border-primary-blue">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark-text">Housing Complex & Service Apartments</h3>
+                        </div>
+                        <p class="text-medium-text">Manage internet across housing complex, labour Camps, service apartments, condominium & co-working spaces.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications / Features Section -->
+        <section id="features" class="bg-light-blue py-16 px-4 md:px-8">
+            <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h6 class="text-primary-blue font-semibold text-sm uppercase mb-2 fade-in-up">technical specification</h6>
+                    <h2 class="text-4xl font-bold text-dark-text mb-4 leading-tight fade-in-up">When you need features, we have it covered.</h2>
+                    <p class="text-lg text-medium-text mb-8 fade-in-up">
+                        Cutting-edge technology, robust performance, and seamless integration to power your connectivity needs.
+                    </p>
+                    <img src="https://placehold.co/1080x1080/0058E6/ffffff?text=Technical+Specs+Image" alt="Technical Specifications" class="w-full h-auto rounded-lg shadow-lg mb-8 lg:mb-0 fade-in-up">
+                </div>
+
+                <div class="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-border-gray transform hover:scale-105 transition duration-300 fade-in-right">
+                        <h5 class="text-xl font-semibold text-dark-text mb-2">Flexible Authentication Options</h5>
+                        <p class="text-medium-text">Supports various authentication methods like social media, SMS, email, and vouchers.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-border-gray transform hover:scale-105 transition duration-300 fade-in-right" style="transition-delay: 0.1s;">
+                        <h5 class="text-xl font-semibold text-dark-text mb-2">Advanced Bandwidth Management</h5>
+                        <p class="text-medium-text">Control bandwidth usage per user, device, or group for optimal network performance.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-border-gray transform hover:scale-105 transition duration-300 fade-in-right" style="transition-delay: 0.2s;">
+                        <h5 class="text-xl font-semibold text-dark-text mb-2">Robust Reporting & Analytics</h5>
+                        <p class="text-medium-text">Gain insights into network usage, user behavior, and revenue generation.</p>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-border-gray transform hover:scale-105 transition duration-300 fade-in-right" style="transition-delay: 0.3s;">
+                        <h5 class="text-xl font-semibold text-dark-text mb-2">Centralized Management</h5>
+                        <p class="text-medium-text">Manage multiple locations and devices from a single, intuitive dashboard.</p>
+                    </div>
+
+                    <!-- Feature Card 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-border-gray transform hover:scale-105 transition duration-300 fade-in-right" style="transition-delay: 0.4s;">
+                        <h5 class="text-xl font-semibold text-dark-text mb-2">Seamless Integration</h5>
+                        <p class="text-medium-text">Compatible with leading network devices and third-party systems.</p>
+                    </div>
+
+                    <!-- Feature Card 6 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-border-gray transform hover:scale-105 transition duration-300 fade-in-right" style="transition-delay: 0.5s;">
+                        <h5 class="text-xl font-semibold text-dark-text mb-2">Enhanced Security Features</h5>
+                        <p class="text-medium-text">Protect your network with advanced firewall, content filtering, and threat detection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Clients Section -->
+        <section class="py-16 px-4 md:px-8 bg-white">
+            <div class="container mx-auto text-center">
+                <h6 class="text-primary-blue font-semibold text-sm uppercase mb-2 fade-in-up">our clients</h6>
+                <h2 class="text-4xl font-bold text-dark-text mb-8 fade-in-up">Trusted by Industry Leaders</h2>
+
+                <div class="swiper-container client-carousel">
+                    <div class="swiper-wrapper">
+                        <!-- Client Logo 1 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2309.png" alt="Reliance Jio Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 2 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2311.png" alt="Vodafone Idea Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 3 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2312.png" alt="Bharat Sanchar Nigam Limited Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 4 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2313.png" alt="Tata Tele Business Services Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 5 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2314.png" alt="GMR Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 6 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2315.png" alt="GVK Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 7 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2316.png" alt="Apollo Hospitals Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 8 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2317.png" alt="Max Healthcare Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 9 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2319.png" alt="Fortis Healthcare Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 10 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2320.png" alt="Manipal Hospitals Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 11 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2321.png" alt="Kokilaben Dhirubhai Ambani Hospital Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 12 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096556.png" alt="Manipal Hospital Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 13 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2318.png" alt="Dr LAL Pathlab Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 14 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2323.png" alt="IDBI Bank Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 15 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2324.png" alt="Federal Bank Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 16 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/image-2325.png" alt="NSE Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 17 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096550.png" alt="DVC Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Client Logo 18 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096549.png" alt="SAIL Logo" class="max-w-full h-auto" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="bg-primary-red text-white py-12 px-4 md:px-8 rounded-t-xl shadow-lg">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="fade-in-up">
+                    <div class="text-5xl font-bold mb-2">100+</div>
+                    <p class="text-lg">Countries</p>
+                </div>
+                <div class="fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="text-5xl font-bold mb-2">4.5M+</div>
+                    <p class="text-lg">Subscribers</p>
+                </div>
+                <div class="fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="text-5xl font-bold mb-2">250+</div>
+                    <p class="text-lg">Channel Partners</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Party Integrations Section -->
+        <section id="integrations" class="py-16 px-4 md:px-8 bg-gray-50">
+            <div class="container mx-auto text-center">
+                <h6 class="text-primary-blue font-semibold text-sm uppercase mb-2 fade-in-up">diverse integration</h6>
+                <h2 class="text-4xl font-bold text-dark-text mb-4 fade-in-up">3rd party integrations</h2>
+                <p class="text-lg text-medium-text max-w-2xl mx-auto mb-12 fade-in-up">
+                    24Online RADIUS is well integrated with major 3rd party BRAS/BNG/DPI/Access Gateway/NAS as well as 3rd party Wi-Fi Access Point/ Wireless Controller.
+                </p>
+
+                <div class="swiper-container integration-carousel">
+                    <div class="swiper-wrapper">
+                        <!-- Integration Logo 1 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096573.png" alt="Cisco Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 2 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096574.png" alt="Juniper Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 3 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096575.png" alt="Nokia Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 4 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096576.png" alt="MikroTik Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 5 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096577.png" alt="Idesnext Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 6 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096578.png" alt="Opera Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 7 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096579.png" alt="Azure Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 8 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096581.png" alt="Ruckus Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 9 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096582.png" alt="Aruba Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 10 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096583.png" alt="Cisco Meraki Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 11 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096584.png" alt="Cambium Networks Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 12 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096585.png" alt="Active Directory Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 13 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096586.png" alt="Ubiquiti Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 14 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096587.png" alt="Gupshup Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 15 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096588.png" alt="Infobip Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 16 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096589.png" alt="BulkSMS Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 17 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096590.png" alt="HSFMSM Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 18 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096592.png" alt="Atom Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 19 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096593.png" alt="PayPal Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 20 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096594.png" alt="M-Pesa Logo" class="max-w-full h-auto" />
+                        </div>
+                        <!-- Integration Logo 21 -->
+                        <div class="swiper-slide p-4 flex justify-center items-center">
+                            <img src="https://www.globetek.co.in/wp-content/uploads/2025/04/Frame-48096595.png" alt="Web Pay Logo" class="max-w-full h-auto" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-white py-16 px-4 md:px-8">
+            <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 flex justify-center fade-in-up">
+                    <img src="https://placehold.co/600x400/E60000/ffffff?text=About+Us+Image" alt="About Us" class="rounded-lg shadow-lg max-w-full h-auto">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h6 class="text-primary-blue font-semibold text-sm uppercase mb-2 fade-in-right">About Us</h6>
+                    <h2 class="text-4xl font-bold text-dark-text mb-4 leading-tight fade-in-right">Driving Connectivity, Empowering Businesses</h2>
+                    <p class="text-lg text-medium-text mb-4 fade-in-right">
+                        Globetek Infoway is a leading provider of innovative Internet Management Solutions. We specialize in optimizing network performance, enhancing security, and delivering seamless connectivity for a diverse range of industries.
+                    </p>
+                    <p class="text-lg text-medium-text mb-8 fade-in-right">
+                        Our commitment to cutting-edge technology and customer satisfaction drives us to deliver robust solutions that cater to the evolving demands of the digital landscape.
+                    </p>
+                    <button class="bg-primary-red text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-light-red hover:text-primary-red transition duration-300 transform hover:scale-105">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="bg-light-red py-16 px-4 md:px-8 rounded-t-xl shadow-lg">
+            <div class="container mx-auto text-center">
+                <h6 class="text-primary-red font-semibold text-sm uppercase mb-2 fade-in-up">Contact Us</h6>
+                <h2 class="text-4xl font-bold text-dark-text mb-8 fade-in-up">Get in Touch</h2>
+
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md border border-border-gray fade-in-up">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-left text-dark-text text-sm font-medium mb-1">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-border-gray rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-left text-dark-text text-sm font-medium mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-border-gray rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-left text-dark-text text-sm font-medium mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-border-gray rounded-md focus:outline-none focus:ring-2 focus:ring-primary-red" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary-red text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-light-red hover:text-primary-red transition duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark-text text-white py-12 px-4 md:px-8 rounded-t-xl shadow-lg">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Globetek Infoway</h3>
+                <p class="text-light-text mb-2">Comprehensive Internet Management Solutions.</p>
+                <p class="text-light-text mb-2">Email: info@globetek.co.in</p>
+                <p class="text-light-text">Phone: +91-XXXXXXXXXX</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#solutions" class="text-light-text hover:text-primary-red transition duration-300">Solutions</a></li>
+                    <li><a href="#features" class="text-light-text hover:text-primary-red transition duration-300">Features</a></li>
+                    <li><a href="#clients" class="text-light-text hover:text-primary-red transition duration-300">Clients</a></li>
+                    <li><a href="#integrations" class="text-light-text hover:text-primary-red transition duration-300">Integrations</a></li>
+                    <li><a href="#about" class="text-light-text hover:text-primary-red transition duration-300">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-primary-red transition duration-300 text-2xl" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary-red transition duration-300 text-2xl" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary-red transition duration-300 text-2xl" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-primary-red transition duration-300 text-2xl" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-light-text mt-8 pt-8 border-t border-gray-700">
+            &copy; 2025 Globetek Infoway. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Swiper JS for Carousels -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.remove('hidden');
+            });
+
+            closeMobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Initialize Swiper for client carousel
+            new Swiper('.client-carousel', {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 50,
+                    },
+                },
+            });
+
+            // Initialize Swiper for integration carousel
+            new Swiper('.integration-carousel', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetween: 50,
+                    },
+                    1024: {
+                        slidesPerView: 7,
+                        spaceBetween: 60,
+                    },
+                },
+            });
+
+            // Intersection Observer for fade-in animations
+            const faders = document.querySelectorAll('.fade-in-up, .fade-in-right');
+            const appearOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px" // Start animation 50px before element enters viewport
+            };
+
+            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('active');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+    </script>
+</body>
+</html>
