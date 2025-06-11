@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globetek - Partner Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for specific elements not easily done with pure Tailwind or for pseudo-elements */
+        .partner-program-section ul li::before {
+            content: '•';
+            color: #E60000; /* Red accent */
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'globetek-red': '#E60000', /* Define custom red color */
+                        'globetek-dark-red': '#cc0000', /* Darker shade for hover */
+                        'globetek-light-gray': '#f9f9f9',
+                        'globetek-lighter-gray': '#f5f5f5',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="bg-white py-4 border-b border-gray-200">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x40?text=GLOBETEK" alt="Globetek Logo" class="h-10">
+            </div>
+            <nav class="nav-links">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-gray-600 font-bold hover:text-globetek-red transition-colors duration-300">About Us</a></li>
+                    <li><a href="#" class="text-gray-600 font-bold hover:text-globetek-red transition-colors duration-300">Products</a></li>
+                    <li><a href="#" class="text-gray-600 font-bold hover:text-globetek-red transition-colors duration-300">Solutions</a></li>
+                    <li><a href="#" class="text-gray-600 font-bold hover:text-globetek-red transition-colors duration-300">Services</a></li>
+                    <li><a href="#" class="text-gray-600 font-bold hover:text-globetek-red transition-colors duration-300">Contact Us</a></li>
+                    <li><a href="#" class="bg-globetek-red text-white py-2 px-4 rounded-md hover:bg-globetek-dark-red transition-colors duration-300">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative bg-cover bg-center bg-no-repeat text-white text-center py-24 md:py-32 flex items-center justify-center min-h-[300px]"
+        style="background-image: url('https://via.placeholder.com/1920x400/333333/FFFFFF?text=Partner+Portal+Hero+Image');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Partner portal</h1>
+            <p class="text-lg md:text-xl">Expand your reach with Globetek, delivering 3X to 5X products</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-globetek-light-gray">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row gap-10 items-start">
+            <div class="md:w-2/3">
+                <h2 class="text-3xl md:text-4xl font-bold text-globetek-red mb-5">Join Globetek Channel Partner Program</h2>
+                <p class="leading-relaxed mb-4 text-gray-700">The Globetek Channel Partner Program is built to empower our partners with the tools, resources, and support needed to thrive in today's competitive market. We are committed to fostering strong relationships and providing mutually beneficial opportunities.</p>
+                <ul class="list-none p-0 mt-5">
+                    <li class="mb-2 pl-6 relative text-gray-700">
+                        <strong class="font-bold">Competitive Margins:</strong> Benefit from attractive profit margins on our products and services.
+                    </li>
+                    <li class="mb-2 pl-6 relative text-gray-700">
+                        <strong class="font-bold">Full Range of Products:</strong> Access our comprehensive portfolio of cutting-edge industrial solutions.
+                    </li>
+                    <li class="mb-2 pl-6 relative text-gray-700">
+                        <strong class="font-bold">Dedicated Support:</strong> Receive priority support from our expert team, ensuring your success.
+                    </li>
+                    <li class="mb-2 pl-6 relative text-gray-700">
+                        <strong class="font-bold">Marketing Resources:</strong> Utilize our co-marketing materials and campaigns to reach a wider audience.
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/3 flex justify-center items-center mt-8 md:mt-0">
+                <img src="https://via.placeholder.com/400x300/CCCCCC/000000?text=Business+Partners" alt="Business Partners" class="max-w-full h-auto rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row gap-10">
+            <div class="flex-1 bg-globetek-lighter-gray p-8 rounded-lg shadow-sm">
+                <h2 class="text-3xl font-bold text-globetek-red mb-5">Additional Benefits</h2>
+                <p class="leading-relaxed mb-5 text-gray-700">Experience an extended range of advantages with Globetek. We prioritize your success through comprehensive support and tailored solutions. </p>
+                <img src="https://via.placeholder.com/300x200/DDDDDD/000000?text=Benefits+Image" alt="Additional Benefits" class="max-w-full h-auto rounded-lg mt-4">
+            </div>
+            <div class="flex-1 bg-globetek-lighter-gray p-8 rounded-lg shadow-sm">
+                <h2 class="text-3xl font-bold text-globetek-red mb-5">Partner Enquiry</h2>
+                <p class="leading-relaxed mb-5 text-gray-700">Interested in becoming a Globetek partner? Fill out the form below, and our team will get in touch with you shortly.</p>
+                <form action="#" method="post">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <input type="text" id="name" name="name" placeholder="Name" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-globetek-red">
+                        <input type="text" id="company" name="company" placeholder="Company" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-globetek-red">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <input type="email" id="email" name="email" placeholder="Email" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-globetek-red">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-globetek-red">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <input type="text" id="city" name="city" placeholder="City" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-globetek-red">
+                        <input type="text" id="country" name="country" placeholder="Country" required
+                            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-globetek-red">
+                    </div>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message"
+                        class="w-full p-3 border border-gray-300 rounded-md mb-6 resize-y focus:outline-none focus:ring-2 focus:ring-globetek-red"></textarea>
+                    <button type="submit"
+                        class="bg-globetek-red text-white py-3 px-6 rounded-md text-lg hover:bg-globetek-dark-red transition-colors duration-300">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-5 mt-10">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Globetek. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clientele - Globetek Infoway</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/png" href="HTML Photos-20250608T081159Z-1-001/HTML Photos/Favicon/logo.png">
+    <script type="application/ld+json">
+        [
+            {
+                "@context": "https://schema.org/",
+                "@type": "WebPage",
+                "name": "Your Page Name",
+                "url": "Your Page URL",
+                "description": "A brief description of your page content.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Globetek Infoway"
+                }
+            }
+        ]
+    </script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="HTML Photos-20250608T081159Z-1-001/HTML Photos/Header & Footer logo/Nav logo.png" alt="ClientPro Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="partners.html">Partner Portal</a></li>
+                    <li><a href="clientele.html" class="active">Our Clientele</a></li>
+                    <li><a href="case-study.html">Case Study</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html" class="button">Talk to Sales</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="clientele-hero" style="position:relative;height:50vh;overflow:hidden;margin-bottom:2rem;">
+            <img src="HTML Photos-20250608T081159Z-1-001/HTML Photos/Our client/Hero image.jpg" alt="Our Clients Hero" style="width:100%;height:100%;object-fit:cover;">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,0.5);z-index:2;">
+                <h1 style="font-size:2.5rem;">Our Clients</h1>
+                <p style="font-size:1.2rem;">Trusted by leading organizations across industries</p>
+            </div>
+            <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.3);"></div>
+        </div>
+        <section class="section-padding">
+            <div class="container">
+                <h2>Our Esteemed Clientele</h2>
+                <p class="subtitle">We are proud to serve a diverse range of clients, from global enterprises to local businesses.</p>
+                <section class="max-w-7xl mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Tabs -->
+      <div class="space-y-2">
+        <button onclick="showTab('tab1')" class="tab-button block w-full text-left px-4 py-3 border-l-4 border-transparent hover:bg-gray-200 font-bold text-sm tab-active">TELCOS, ISPs, BSPS & MSPS</button>
+        <button onclick="showTab('tab2')" class="tab-button block w-full text-left px-4 py-3 border-l-4 border-transparent hover:bg-gray-200 font-bold text-sm">MULTI-CHAIN HOTELS, RESORTS, & CAFES</button>
+        <button onclick="showTab('tab3')" class="tab-button block w-full text-left px-4 py-3 border-l-4 border-transparent hover:bg-gray-200 font-bold text-sm">AIRPORTS, BANKS, MALLS & SMART CITIES</button>
+        <button onclick="showTab('tab4')" class="tab-button block w-full text-left px-4 py-3 border-l-4 border-transparent hover:bg-gray-200 font-bold text-sm">HOSPITALS & DIAGNOSTIC LABS</button>
+        <button onclick="showTab('tab5')" class="tab-button block w-full text-left px-4 py-3 border-l-4 border-transparent hover:bg-gray-200 font-bold text-sm">UNIVERSITIES, COLLEGES, & SCHOOLS</button>
+      </div>
+
+      <!-- Image area -->
+      <div class="md:col-span-2">
+        <div id="tab1" class="tab-content block">
+          <img src="https://via.placeholder.com/800x400?text=TELCOS+IMAGE" class="rounded shadow w-full h-auto" alt="Tab 1">
+        </div>
+        <div id="tab2" class="tab-content hidden">
+          <img src="https://via.placeholder.com/800x400?text=HOTELS+AND+CAFES" class="rounded shadow w-full h-auto" alt="Tab 2">
+        </div>
+        <div id="tab3" class="tab-content hidden">
+          <img src="https://via.placeholder.com/800x400?text=AIRPORTS+AND+SMART+CITIES" class="rounded shadow w-full h-auto" alt="Tab 3">
+        </div>
+        <div id="tab4" class="tab-content hidden">
+          <img src="https://via.placeholder.com/800x400?text=HOSPITALS+LABS" class="rounded shadow w-full h-auto" alt="Tab 4">
+        </div>
+        <div id="tab5" class="tab-content hidden">
+          <img src="https://via.placeholder.com/800x400?text=UNIVERSITIES+SCHOOLS" class="rounded shadow w-full h-auto" alt="Tab 5">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-button').forEach(el => el.classList.remove('tab-active'));
+      document.getElementById(tabId).classList.remove('hidden');
+      event.target.classList.add('tab-active');
+    }
+  </script>
+            </div>
+        </section>
+        <style>
+            .client-logos-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 30px;
+                margin-top: 40px;
+            }
+            .client-logo-card {
+                background: #fff;
+                padding: 25px;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+                transition: all 0.3s ease;
+                height: 120px;
+            }
+            .client-logo-card:hover {
+                 transform: scale(1.05) translateY(-5px);
+                 box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+            }
+            .client-logo-card img {
+                max-width: 90%;
+                max-height: 70px;
+                filter: grayscale(100%);
+                opacity: 0.8;
+                transition: all 0.3s;
+            }
+            .client-logo-card:hover img {
+                filter: grayscale(0%);
+                opacity: 1;
+            }
+        </style>
+        <section class="client-images section-padding">
+            <div class="container">
+                <h2>Our Clients</h2>
+                <div class="client-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div class="client-item"><img src="HTML Photos-20250608T081159Z-1-001/HTML Photos/Our client/university.jpeg" alt="University Client" style="width:100%;border-radius:10px;"></div>
+                    <div class="client-item"><img src="HTML Photos-20250608T081159Z-1-001/HTML Photos/Our client/hospitals.jpeg" alt="Hospitals Client" style="width:100%;border-radius:10px;"></div>
+                    <div class="client-item"><img src="HTML Photos-20250608T081159Z-1-001/HTML Photos/Our client/Hotels.jpeg" alt="Hotels Client" style="width:100%;border-radius:10px;"></div>
+                    <div class="client-item"><img src="HTML Photos-20250608T081159Z-1-001/HTML Photos/Our client/Airports.jpeg" alt="Airports Client" style="width:100%;border-radius:10px;"></div>
+                    <div class="client-item"><img src="HTML Photos-20250608T081159Z-1-001/HTML Photos/Our client/Telcos.jpeg" alt="Telcos Client" style="width:100%;border-radius:10px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer section-padding">
+        <div class="container">
+             <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>About Globetek</h4>
+                    <p>Established in 2002, we provide complete systems & networking solutions for the world of Information Technology.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Terms & Policies</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>Indo Japan House, 4th Floor, Saltlake, Kolkata - 700091</p>
+                    <p>Email: sales@globetek.co.in</p>
+                    <p>Phone: +91 85850 04344</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <img src="HTML Photos-20250608T081159Z-1-001/HTML Photos/Header & Footer logo/Footer logo.png" alt="ClientPro Footer Logo">
+                <p>Copyright &copy; 2025 Globetek Infoway | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
